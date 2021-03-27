@@ -1,6 +1,9 @@
-$brand-color: rgb(55, 0, 255);
-
-
-*{
-    color: $brand-color;
-}
+@import './base/settings';
+@import './base/base';
+@import './components/buttons';
+@import './components/header';
+@import './components/container';
+@import './components/widget';
+@import './components/option';
+@import './components/add-option';
+@import './components/modal';

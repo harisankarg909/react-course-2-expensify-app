@@ -3,7 +3,7 @@ import Header from './Header.js'
 import Action from './Action.js'
 import AddOption from './AddOption.js'
 import Options from './Options.js'
-import OptionModal from './OptinModal.js';
+import OptionModal from './OptionModal.js';
 
 export default class IndecisionApp extends React.Component{
     state = {options:this.props.options,
@@ -97,14 +97,18 @@ export default class IndecisionApp extends React.Component{
         return(
             <div>
                 <Header title={title} subTitle={subTitle} />
-                <Action hasOptions={this.state.options.length>0} 
+               <div className='container background'>
+               <Action hasOptions={this.state.options.length>0} 
                     handleRandomPick={this.handleRandomPick}
                 />
+                <div className='widget'>
                 <Options options={this.state.options} 
                 handleDeleteOptions = {this.handleDeleteOptions}
                     handleDeleteOption = {this.handleDeleteOption}
                 />
                 <AddOption handleAddOption={this.handleAddOption}/>
+                </div>
+               </div>
                 <OptionModal 
                     selectedOption={this.state.selectedOption}
                     handleClearSelectedOption = {this.handleClearSelectedOption}
