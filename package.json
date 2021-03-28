@@ -1,5 +1,5 @@
 {
-  "name": "testapp",
+  "name": "expensify",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,6 +26,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-modal": "^3.12.1",
+    "react-router-dom": "^5.2.0",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
