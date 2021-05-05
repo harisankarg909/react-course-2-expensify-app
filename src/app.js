@@ -13,7 +13,7 @@ import './styles/styles.scss'
 const store = configureStore();
 console.log(store.getState());
 
-store.dispatch(addExpense({description: 'Water Bill',
+/* store.dispatch(addExpense({description: 'Water Bill',
 note: '', 
 amount: 4500}));
 
@@ -25,7 +25,7 @@ createdAt: 1000}));
 store.dispatch(addExpense({description: 'Rent',
 note:'', 
 amount: 109500, 
-createdAt: 100}));
+createdAt: 100})); */
 
 /* store.dispatch(setTextFilter('gas'));
 console.log(store.getState());
